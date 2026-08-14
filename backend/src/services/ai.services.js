@@ -4,7 +4,6 @@ const groq = new Groq({ apiKey: process.env.GROQ_API_KEY });
 async function getResponse(prompt) {
   const chatCompletion = await groq.chat.completions.create({
     model: "openai/gpt-oss-120b",
-    // model: "deepseek-r1-distill-qwen-32b",
     messages: [
       {
         role: "user",
@@ -13,14 +12,12 @@ async function getResponse(prompt) {
       {
         role: "system",
         content: `
-                Act as an expert in programming languages who has read through many programming advice online for Python, Java, C, and C ++.
-        Can you please help suggest improvements for the given Python code, mentioning the existing code line by line with proper indentation?  
-        Can you also convert the improved code version to Java, C, and C++? 
+                Act as an expert in programming languages who has read through many programming advice online.
+        Can you please help suggest improvements for the given code, mentioning the existing code line by line with proper indentation?  
         Can you also give time and space complexities for the improved code version? 
         While responding, can you use this format? 
         Suggestions
-        Improved code in Python
-        Improved code in Java, c, and C++. 
+        Improved code 
         Time and space complexities 
         Personalized learning links
                 `,

@@ -29,8 +29,8 @@ This project demonstrates how to build a powerful AI-powered web application usi
 
 1. Clone this repository:
     ```bash
-    git clone https://github.com/Chando0185/genai_mern_project
-    cd genai_mern_project
+    git clone https://github.com/Arun221196/genai_code_review_studio
+    cd genai_code_review_studio
     ```
 
 2. Install dependencies:
