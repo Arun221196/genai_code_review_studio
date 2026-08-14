@@ -77,7 +77,14 @@ app.get("/", (req, res)=>{
 
 app.use(express.json())
 app.use(express.urlencoded({extended: true}))
-app.use(cors())
+app.use(cors({
+    origin: [
+        'https://genai-code-review-studio.vercel.app',
+        'http://localhost:5173',
+        'http://localhost:3000'
+    ],
+    credentials: true
+}))
 
 app.use('/ai', aiRoutes);
 
