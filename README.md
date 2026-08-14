@@ -1,5 +1,8 @@
 # MERN Stack AI-Powered Web Application
 
+## Link to GenAI code review app delpoed in Vercel
+https://genai-code-review-studio.vercel.app/
+
 This project demonstrates how to build a powerful AI-powered web application using the **MERN Stack** and the **openai/gpt-oss-120b** model, running inference on the **Groq API** for ultra-fast AI responses. It integrates **React**, **Node.js**, **Express**, and **MongoDB** to create an AI chatbot or content generation tool.
 
 ## What You’ll Learn:
